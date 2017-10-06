@@ -5,8 +5,8 @@ import MySQLdb
 
 class DataBase(object):
     def __init__(self):
-        self.user = 'root'
-        self.pass_word = '85607505rzd?'
+        self.user = ''
+        self.pass_word = ''
         self.db_name = 'DouBanMovies'
         self.db = MySQLdb.connect('localhost', self.user, self.pass_word, self.db_name, charset='utf8')
         self.cursor = self.db.cursor()
